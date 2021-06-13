@@ -66,6 +66,6 @@ function animate() {
     canvas = playground.querySelector('canvas');
 }
 
-setScene('https://i.pinimg.com/originals/b0/2b/48/b02b486638d725aae108d0a4a562e557.jpg');
+setScene('https://openart.in/wp-content/uploads/2016/09/2012-10-29-1024x724.jpg);
 
 

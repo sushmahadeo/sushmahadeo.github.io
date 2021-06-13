@@ -66,6 +66,6 @@ function animate() {
     canvas = playground.querySelector('canvas');
 }
 
-setScene('https://unsplash.it/600/?random');
+setScene('https://i.pinimg.com/originals/b0/2b/48/b02b486638d725aae108d0a4a562e557.jpg');
 
 

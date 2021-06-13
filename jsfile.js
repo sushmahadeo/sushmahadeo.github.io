@@ -11,7 +11,7 @@ var raf;
 
 
 var renderer = PIXI.autoDetectRenderer(width, height, {transparent:true});
-renderer.autoDensity = true;
+
 var tp, preview;
 var displacementSprite,
 	displacementFilter,

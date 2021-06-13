@@ -1,0 +1,8 @@
+.plant {
+    height: 700px;
+    background-image: url(https://png.pngtree.com/element_our/20190528/ourmid/pngtree-potted-plants-image_1153974.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    -webkit-clip-path: url(“#clip-plant”);
+    clip-path: url(“#clip-plant”);}

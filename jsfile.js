@@ -22,12 +22,12 @@ function setScene(url){
 
 	        stage = new PIXI.Container();
 
-	        tp = PIXI.Texture.fromImage(url);
+	        tp = PIXI.Texture.from(url);
 	        preview = new PIXI.Sprite(tp);
 
 	        preview.anchor.x = 0;
 	    
-	        displacementSprite = PIXI.Sprite.fromImage('https://res.cloudinary.com/dvxikybyi/image/upload/v1486634113/2yYayZk_vqsyzx.png');
+	        displacementSprite = PIXI.Sprite.from('https://res.cloudinary.com/dvxikybyi/image/upload/v1486634113/2yYayZk_vqsyzx.png');
 	        displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
 
 	       	displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);

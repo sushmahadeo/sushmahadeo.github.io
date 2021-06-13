@@ -49,10 +49,10 @@ svg {
   transform-origin: 50%;
   transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
 }
-.x .line {
-  stroke-width: 5.5px;
-}
 
+.active .x {
+  transform: scale(1);
+  transition: transform 400ms 350ms;
 }
 /* El segundo plato */
 .plate2 .line1 {
@@ -116,7 +116,6 @@ svg {
 
 
  
-
 <svg>
   <defs>
     <filter id="gooeyness">
@@ -127,6 +126,12 @@ svg {
   </defs>
 </svg>
 <div class="plates">
+  
+    <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+      <path class="line" d="M 34,32 L 66,68" />
+      <path class="line" d="M 66,32 L 34,68" />
+    </svg>
+  </div>
   <div class="plate plate2" onclick="this.classList.toggle('active')">
     <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
       <path class="line line1" d="M 50,65 H 70 C 70,65 75,65.198488 75,70.762712 C 75,73.779026 74.368822,78.389831 66.525424,78.389831 C 22.092231,78.389831 -18.644068,-30.508475 -18.644068,-30.508475" />
@@ -142,8 +147,6 @@ svg {
     </svg>
   </div>
  
-</div>
-
 
 </body>
 </html>

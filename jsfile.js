@@ -66,5 +66,5 @@ function animate() {
     canvas = playground.querySelector('canvas');
 }
 
-setScene('https://play-lh.googleusercontent.com/SkeesWJOExVX3CA2GImxhZrqyNFVaUxszGihL22nj1-TuIXNjv1zaZ3Gsf5Tvzft-g=s1200');
+setScene('https://pbs.twimg.com/media/Cu7vpgYUEAAdWuF.jpg');
 

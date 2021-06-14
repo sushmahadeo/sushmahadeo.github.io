@@ -66,6 +66,6 @@ function animate() {
     canvas = playground.querySelector('canvas');
 }
 
-setScene('https://openart.in/wp-content/uploads/2016/09/2012-10-29-1024x724.jpg');
+setScene('https://unsplash.it/600/?random');
 
 

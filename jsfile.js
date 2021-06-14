@@ -68,4 +68,4 @@ function animate() {
 
 setScene('https://unsplash.it/600/?random');
 
-
+fetch(request, {mode: 'cors'});

@@ -26,10 +26,8 @@
 			@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 
 			.mask-custom {
-				backdrop-filter: contrast(74%) brightness(79%) saturate(100%) sepia(0%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(2px);
-				mix-blend-mode: screen;
-				background: rgba(243, 106, 188, 0.3);
-				opacity: 0.9;
+				backdrop-filter: blur(5px);
+				background-color: rgba(178, 60, 253, 0.2);
 			}
 
 			svg text {
@@ -133,29 +131,32 @@
 
 <!--- Main Page --->
 		<div id="intro" class="bg-image vh-100 shadow-1-strong" style=" background-image:url('https://data.whicdn.com/images/310967975/original.gif');"> 
-			<div class="mask mask-custom"> </div>
+			<div class="mask mask-custom">
+				<div class="d-flex justify-content-center align-items-center h-100">
 
-			<svg width="100%" height="100%">
-				<text x="50%" y="60%"  text-anchor="middle"> Welcome to my Website </text>
-			</svg>
+					<svg width="100%" height="100%">
+						<text x="50%" y="60%"  text-anchor="middle"> Welcome to my Website </text>
+					</svg>
 
-			<h5 class="mb-4"> I conduct research on human trafficking and child sexual abuse, and aim to develop technology to help combat both issues</h5>
-			<a 
-				class="btn btn-outline-light btn-lg m-2"
-                href="research.html"
-                role="button"
-                rel="nofollow"
-                target="_blank"
-                >Research</a>
-              
-              <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="projects.html"
-                target="_blank"
-                role="button"
-                >Projects</a>
+					<h5 class="mb-4"> I conduct research on human trafficking and child sexual abuse, and aim to develop technology to help combat both issues</h5>
 
-            </div>
+					<a 
+						class="btn btn-outline-light btn-lg m-2"
+		                href="research.html"
+		                role="button"
+		                rel="nofollow"
+		                target="_blank"
+		                >Research</a>
+		              
+		              <a
+		                class="btn btn-outline-light btn-lg m-2"
+		                href="projects.html"
+		                target="_blank"
+		                role="button"
+		                >Projects</a>
+		        </div>
+		    </div>
+        </div>
     </header>
 </body>
 

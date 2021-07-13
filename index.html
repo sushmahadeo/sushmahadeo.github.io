@@ -112,8 +112,39 @@
       <div id="intro" class="bg-image vh-100 shadow-1-strong" style=" background-image:url('https://data.whicdn.com/images/310967975/original.gif');"> 
     
           <div class="container d-flex align-items-center justify-content-center text-center h-100">
-            <div class="text-black">
-              <h1 class="mb-3">Welcome to My Website!</h1> 
+              <div class="words word-1">
+  <span>W</span>
+  <span>E</span>
+  <span>L</span>
+  <span>C</span>
+  <span>O</span>
+  <span>M</span>
+  <span>E</span>
+</div>
+
+<div class="words word-2">
+  <span>T</span>
+  <span>O</span>
+</div>
+
+<div class="words word-3">
+  <span>M</span>
+  <span>Y</span>
+</div>
+
+
+<div class="words word-4">
+  <span>W</span>
+  <span>E</span>
+  <span>B</span>
+  <span>S</span>
+  <span>I</span>
+  <span>T</span>
+  <span>E</span>
+</div>
+
+
+
               <h5 class="mb-4"> I conduct research on human trafficking and child sexual abuse, and aim to develop technology to help combat both issues</h5>
               <a
                 class="btn btn-outline-light btn-lg m-2"
@@ -134,13 +165,64 @@
         </div>
       </div>
 
-      <style> .mb-3{
-		font-size: 50px;
-		font-family: 'Cinzel Decorative', cursivepx;
-		color: #121010;
-		font-weight: bold;
-		text-shadow: rgba(129, 96, 133, 0.8) -11px -7px 6px,
-				 #581cc7 4px 4px 1px;}
+      <style> body {
+  font-family: "Archivo Black", sans-serif;
+  background:transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.words {
+  color: transparent;
+  font-size: 0;
+  line-height: 1.5;
+}
+
+.words span {
+  font-size: 5rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+
 	</style>
 
 

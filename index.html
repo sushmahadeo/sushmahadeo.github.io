@@ -25,6 +25,13 @@
 
 			@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 
+			.mask-custom {
+				backdrop-filter: contrast(74%) brightness(79%) saturate(100%) sepia(0%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(2px);
+				mix-blend-mode: screen;
+				background: rgba(243, 106, 188, 0.3);
+				opacity: 0.9;
+			}
+
 			svg text {
 				font-family: Lora;
 				stroke: #ffa5d8;
@@ -130,6 +137,8 @@
 
 <!--- Main Page --->
 		<div id="intro" class="bg-image vh-100 shadow-1-strong" style=" background-image:url('https://data.whicdn.com/images/310967975/original.gif');"> 
+			<div class="mask mask-custom"> </div>
+
 			<svg width="100%" height="100%">
 				<text x="50%" y="60%"  text-anchor="middle"> Welcome to my Website </text>
 			</svg>

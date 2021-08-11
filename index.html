@@ -25,11 +25,14 @@
 
 			@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 
-		
+			.mask-custom {
+				  backdrop-filter: blur(5px);
+				   background-color: rgba(150, 110, 191, 0.3);
+			}
 
 		.wrapper {
   height: 100vh;
-  color: white;
+  /*This part is important for centering*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +40,6 @@
 
 .typing-demo {
   width: 22ch;
-  color: white;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -56,38 +58,6 @@
   50% {
     border-color: transparent
   }
-}
-
-
-* { box-sizing: border-box; }
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
 }
 		</style>
 
@@ -167,20 +137,18 @@
 
 
 <!--- Main Page --->
+		<div id="intro" class="bg-image vh-100 shadow-1-strong" style=" background-image:url('https://data.whicdn.com/images/310967975/original.gif');"> 
+			<div class="mask mask-custom">
+				<div class="d-flex flex-column align-items-center text-center h-100">
 
-<div class="video-background">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/fSKEKcAzooE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-
-	<div class="wrapper">
+					<div class="wrapper">
     <div class="typing-demo">
       Welcome to my Website!
     </div>
-  </div>
-    	<div class="container">
-					<h5> I conduct research on human trafficking and child sexual abuse, and aim to develop technology to help combat both issues</h5>
+</div>
+					
+
+				<h5> I conduct research on human trafficking and child sexual abuse, and aim to develop technology to help combat both issues</h5>
 
 				<div class="d-flex">
 					<a 
@@ -198,8 +166,9 @@
 		                role="button"
 		                >Projects</a>
 		        </div>
-		      </div>
-
+		        </div>
+		    </div>
+        </div>
     </header>
 </body>
 

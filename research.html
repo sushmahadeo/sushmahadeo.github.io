@@ -23,11 +23,22 @@
     <style>
         @media (min-width: 992px) { #intro {margin-top: -58.59px;}  }
 
-      .navbar .nav-link {color: #928ed7 !important; }
+      .navbar .nav-link {color: black !important; }
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #a18cd1;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(161, 140, 209, 0.5), rgba(251, 194, 235, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(161, 140, 209, 0.5), rgba(251, 194, 235, 0.5))
+}
     </style>
 
      <!--- Navbar --->
-    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block gradient-custom" style="z-index: 2000;">
       <div class="container-fluid">
         <a class="navbar-brand nav-link" target="_blank" href="aboutme.html">
           <strong>About Me</strong>

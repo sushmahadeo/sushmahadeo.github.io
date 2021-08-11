@@ -59,6 +59,38 @@
     border-color: transparent
   }
 }
+
+
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
 		</style>
 
 
@@ -137,11 +169,12 @@
 
 
 <!--- Main Page --->
-		<div id="intro" class="bg-image vh-100 shadow-1-strong" style="position: fixed; z-index: -99; width: 100%; height: 100%">
-			<iframe frameborder="0" height="100%" width="100%"
-			src="https://youtube.com/embed/fSKEKcAzooE?autoplay=1&controls=0&showinfo=0&autohide=1">
-  </iframe>
-</div>
+
+<div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/fSKEKcAzooE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
 			<div class="mask mask-custom">
 				<div class="d-flex flex-column align-items-center text-center h-100">
 

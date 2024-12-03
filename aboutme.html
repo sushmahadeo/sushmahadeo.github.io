@@ -29,106 +29,72 @@
 
 
 
-
-
-
-
-
-			$clr1: #9181ff; //purple
-$clr2: #8de9ff; //baby blue
-$clr3: #fffa91; //yellow
-$clr4: #ff76c3; //pink
-$clr5: #85ffa9; //green
-$clr6: #ffa563; //orange
-$clr7: #ff686c; //red
-$clr8: #3850eb; //blue
-$black: #1f1f1f; //black
-
-* {
-  margin: 0;
+			body {
+  background-color: #222222;
+  background: repeating-linear-gradient(
+      45deg,
+      #2b2b2b 0%,
+      #2b2b2b 10%,
+      #222222 0%,
+      #222222 50%
+    )
+    0 / 15px 15px;
 }
 
-body {
-  height: 100vh;
-  width:100vw;
-  background:#1f1f1f;
+#container {
+  padding: 2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-div.container{
-  display:flex;
+/*Neon*/
+a {
+  text-align: center;
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
 }
 
-p{
-  letter-spacing:5px;
-  font-weight:900;
-  font-family:Poppins;
-  font-size:300px;
+
+a:nth-child(2) {
+  font-family: Iceland;
+  animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
-p:nth-child(1) {
-background: 
-  repeating-linear-gradient( to right, $clr2 0 10%, transparent 0 20%),
-  repeating-linear-gradient($clr1 0 7%, $clr5 0 10%);
-  background-size:150px;
-  color:transparent;
-  -webkit-background-clip: text;
-};
 
-p:nth-child(2) {
-  background-image:
-    linear-gradient(110deg, $clr7 25%, transparent 25%), 
-    linear-gradient(135deg, $clr1 55%, $clr3 25%), 
-    linear-gradient(45deg, transparent 75%, $clr1 75%), 
-    linear-gradient(135deg, transparent 75%, $black 75%);
-  background-size:40px 70px; 
-  background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
-  color:transparent;
-  -webkit-background-clip: text;
-}
 
-p:nth-child(3) {
-  background-image:linear-gradient(45deg, $clr4 25%, transparent 25%), 
-    linear-gradient(135deg, $clr5 25%, transparent 25%), 
-    linear-gradient(45deg, $clr5 75%, $clr8 75%), 
-    linear-gradient(135deg, transparent 75%, $clr8 75%);
-    background-size:40px 40px; 
-    background-position:0 0, 30px 0, 30px -30px, 0px 30px; 
-  color:transparent;
-  -webkit-background-clip: text;
-}
+/*glow*/
 
-p:nth-child(4) {
-  background-color:$clr1;
-  background-image:
-    linear-gradient(45deg, $clr2 25%, transparent 25%), 
-    linear-gradient(135deg, $clr4 25%, $clr8 25%), 
-    linear-gradient(45deg, transparent 75%, $clr3 75%), 
-    linear-gradient(135deg, transparent 75%, $black 75%);
-  background-size:40px 70px; 
-  background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
-  color:transparent;
-  -webkit-background-clip: text;
-}
 
-p:nth-child(5) {
-  background-image:linear-gradient(10deg, $clr8 25%, transparent 25%), 
-    linear-gradient(100deg, $clr8 25%, $clr5 0 100%), 
-    linear-gradient(100deg, transparent 75%, $black 75%);
-  background-size:40px 70px; 
-  background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
-  color:transparent;
-  -webkit-background-clip: text;
-}
-
-@media screen and (max-height: 400px) {
-  .container > p{
-    font-size:200px;
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+
+
+
+/*Make stuff responsive*/
+
+@media (max-width: 650px) {
+  p {
+    font-size: 3.5em;
+  }
+}
+
+
+
+
 
 
 
@@ -208,14 +174,19 @@ p:nth-child(5) {
 
 
 <!--- Main Page --->
-		<div class='container'>
-			    <p>H</p>
-			    <p>E</p>
-			    <p>L</p>
-			    <p>L</p>
-			    <p>O</p>
-		</div>
+		
+<div id="container">
 
+
+  <a href="https://en.wikipedia.org/wiki/Blue">
+    HELLO
+  </a>
+
+
+
+</div>
+
+<div id="linkBack" style="position:absolute;right:0px;top:0px;background-color:#333;margin:0;width:60px;padding:5px"><a href="http://www.f-rilling.com/projects/" target="_blank" style="font-size:14px;text-decoration:none;color:#fff;padding:0 0 0 5px;font-family:sans-serif">My Site</a></div>
 					
 
 			

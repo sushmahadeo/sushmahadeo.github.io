@@ -267,9 +267,9 @@ main {
     <header>
       <nav>
         <ul>
-          <li><a class="link-bio" href="#bio" @click.prevent="bg = 'bio'">Bio</a></li>
-          <li><a class="link-projects" href="#projects" @click.prevent="bg = 'projects'">Projects</a></li>
-          <li><a class="link-find-me" href="#findme" @click.prevent="bg = 'find-me'">Find Me</a></li>
+          <li><a class="link-bio" href="#bio" @click.prevent="bg = 'bio'">About Me</a></li>
+          <li><a class="link-projects" href="#projects" @click.prevent="bg = 'projects'">Literature Review</a></li>
+          <li><a class="link-find-me" href="#findme" @click.prevent="bg = 'find-me'">Research</a></li>
         </ul>
       </nav>
       <div class="transition transition-bio"></div>
@@ -281,7 +281,7 @@ main {
     <div class="dots dots2"></div>
     <main>
       <transition name="slide-fade" mode="out-in">
-        <p key="bio" v-if="bg==='bio'">Hi! I'm a bio page.</p>
+        <p key="bio" v-if="bg==='bio'">Hi! I conduct research on sex trafficking and CSAM.</p>
         <p key="projects" v-if="bg==='projects'">This is a projects page.</p>
         <p key="find-me" v-if="bg==='find-me'">See <a href="https://pehaa.com" target="_blank" rel="noopener">pehaa.com</a> for the complete website.</p>
       </transition>
